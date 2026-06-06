@@ -1,16 +1,17 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+# Lethal Use of Force around 2020 Police Brutality Protests in Phoenix, Arizona
+- project: Lethal Use of Force around 2020 Police Brutality Protests in Phoenix, Arizona - 2026
+  url: "https://rpubs.com/sgrant44/phxpd_protests_2026"
+  description: In response to the 2020 killing of George Floyd, protests erupted across the country during a tense late spring marked by stay-at-home orders in the midst of a global pandemic. Although the victims of police use of force tend to be people from marginalized communities with less stable backgrounds, the popularity of protests against police brutality make this an increasingly salient issue at the national level. The hypothesis interrogates the effect of various calls for service hot spots after the beginning of the 2020 George Floyd protests on the Phoenix Police Department's use of deadly force on civilians.
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+# Trans Issues in the Mainstream News in Early 2025
+- project: Trans Issues in the Mainstream News in Early 2025 - 2025
+  url: "https://rpubs.com/sgrant44/trans_news_2025"
+  description: Over the last few years, news coverage of transgender (trans) people has increased dramatically. While some articles were published in the interest of educating the mainstream public about gender-diverse people, much of the coverage involves policies and court rulings that negate the existence or restrict the public presence of trans people. In the days following the second presidential inauguration of Donald Trump, do news sources with right-wing media bias ratings use more negative language to depict or discuss transgender people than news sources with other political bias ratings?
+
+# Violent Crime Rates in 5 U.S. States
+- project: Violent Crime Rates in 5 U.S. States - 2023
+  url: "https://rpubs.com/sgrant44/violent_crime_rates_5"
+  description: This dashboard examines violent crime rates from 2010 to 2019 for counties in the 5 most populous states that submit violent offense incidents to the FBI's Uniform Crime Reporting Program. This data is voluntarily submitted by local and state law enforcement offices to the UCR and published by the FBI on an annual basis. Additional population estimates and demographic information is sourced from the U.S. Census and American Community Survey tables.

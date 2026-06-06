@@ -1,19 +1,30 @@
 # Jobs
-# VP of Global Communications
-- company: Springfield International Human Rights Outreach
-  position: VP of Global Communications
-  duration: Oct, 2013 &mdash; Present
-  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
+# Catalist 2
+- company: Catalist, LLC
+  position: Deputy Director of Analytics
+  duration:  February 2020 &mdash; May 2026
+  summary: <ul class="resume-item-list"><li>Performed thematic text analysis of freeform survey responses to make response options more comprehensive</li><li>Led the absentee & early vote reporting email program, publishing emails with key points and data visualizations</li><li>Created data visualizations for post-election Wisconsin and Nevada voter insights using Python</li><li>Managed the release of models to client endpoints, including the Vote Propensity models and Rapid Digital Audiences</li><li>Coordinated the life cycle of data in the BigQuery modeling frame used to develop and score models</li><li>Led the hiring process, including interviews and skills assessment tests, for analysts and data scientists</li></ul>
 
-# Director of Digital Stratgy
-- company: United Nations Human Rights Council
-  position: Director of Digital Strategy
-  duration:  Jun, 2010 &mdash; Sept, 2013
-  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+# DCCC 
+- company: Democratic Congressional Campaign Committee
+  position: Data & Reporting Director
+  duration:  April 2019 &mdash; February 2020
+  summary: <ul class="resume-item-list"><li>Transitioned the existing code base to languages and formats compatible with Phoenix, the Democratic National Committee’s BigQuery database</li><li>Created a reliable and secure AWS EC2 instance and Redshift cluster to automate processes, syncing vendor data with our voter file</li><li>Designed data pipelines to aggregate VAN and voter file data into comprehensive Tableau dashboards</li></ul>
 
+# AFL-CIO
+- company: American Federation of Labor and Congress of Industrial Organizations
+  position: Lead Data Architect
+  duration: November 2017 &mdash; October 2018
+  summary: <ul class="resume-item-list"><li>Produced scalable, replicable code to automate repetitive data management tasks using Python & SQL</li><li>Created systems using Amazon Web Services command line interface (AWS CLI) to deliver data to affiliates</li><li>Designed an ETL system to load voter files to our Redshift cluster using Python, AWS CLI and Unix</li><li>Built reports and data visualizations in Periscope Data using NGP VAN-captured data, membership records and Quickbase API</li></ul>
 
-# Communications Coordinator
-- company: Springfield Women & Children's Center
-  position: Communications Coordinator
-  duration:   Jun, 2008  &mdash; May, 2010
-  summary: Led communication efforts across digital and traditional media channels for marketing and public relations, internal communication strategies, and coordinated support programs for the recipients of the center's services.
+# Catalist 1
+- company: Catalist, LLC
+  position: Tools Support Engineer
+  duration:  August 2015 &mdash; November 2017
+  summary: <ul class="resume-item-list"><li>Created and automated reports regarding client usage of features & data using Tableau, R, SQL & Python</li><li>Updated user interface metadata to expose new or modified data & features in the Q using SQL & Python</li><li>Provided quick and reliable technical support to clients and staff regarding issues with the proprietary applications</li><li>Generated comprehensive user audit reports for each client organization using R & SQL</li><li>Created internal & client-facing reference guides for the organizational file transfer protocol and the voter registration applicant loading process</li></ul>
+
+# NOI
+- company: New Organizing Institute
+  position: Training Coordinator; Logistics Coordinator, State Training Program; and Events Fellow
+  duration:   August 2013  &mdash; February 2015
+  summary: <ul class="resume-item-list"><li>Created and maintained an expense tracking system to manage the budget for a 10-person department</li><li>Collected and standardized data, including contact information and training evaluations, for all program events & trainings</li><li>Managed Exhibitor Hall and Outreach teams for NOI's annual "un-conference" RootsCamp</li></ul>

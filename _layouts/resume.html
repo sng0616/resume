@@ -6,6 +6,12 @@
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <div class="theme-toggle-container no-print">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+          Dark Mode
+        </button>
+      </div>
+      
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
       <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
@@ -68,6 +74,25 @@
       <!-- end Experience -->
       {% endif %}
 
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for project in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
+          <!-- <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4> -->
+          <p class="resume-item-copy">{{ project.description }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}
 
       {% if site.resume_section_education %}
       <!-- begin Education -->
@@ -94,27 +119,6 @@
         {% endfor %}
       </section>
       <!-- end Education -->
-      {% endif %}
-
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
-          <p class="resume-item-copy">{{ project.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
       {% endif %}
 
       {% if site.resume_section_skills %}
@@ -231,13 +235,41 @@
       <!-- end Print Social Links -->
       {% endif %}
 
-      <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
-      </footer>
-
     </div>
+    <script>
+      const toggleBtn = document.getElementById('theme-toggle');
+      const docEl = document.documentElement;
 
+      // 1. Determine baseline preference (Local Storage configuration vs OS Preference)
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        docEl.setAttribute('data-theme', 'dark');
+        toggleBtn.textContent = 'Light Mode';
+      } else {
+        docEl.setAttribute('data-theme', 'light');
+        toggleBtn.textContent = 'Dark Mode';
+      }
+
+      // 2. Handle button interaction clicks
+      toggleBtn.addEventListener('click', () => {
+        const currentTheme = docEl.getAttribute('data-theme');
+        let newTheme = 'light';
+
+        if (currentTheme === 'light') {
+          newTheme = 'dark';
+          toggleBtn.textContent = 'Light Mode';
+        } else {
+          toggleBtn.textContent = 'Dark Mode';
+        }
+
+        docEl.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+    </script>
+    <footer class="page-footer">
+      <p class="footer-line">Original template by <a href="http://twitter.com/jglovier">@jglovier</a>. Forked from <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
+    </footer>
   </body>
-
 </html>
