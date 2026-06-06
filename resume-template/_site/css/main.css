@@ -1,8 +1,5 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-/* ==========================================================================
-   1. Dynamic Core Design Tokens (Light/Dark Engine)
-   ========================================================================== */
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
@@ -29,9 +26,6 @@ html[data-theme="dark"] {
     --selection-text: #ffffff;
 }
 
-/* ==========================================================================
-   2. Normalized Core Foundation
-   ========================================================================== */
 html {
     font-family: sans-serif;
     text-size-adjust: 100%;
@@ -259,9 +253,7 @@ th {
     box-sizing: border-box
 }
 
-/* ==========================================================================
-   3. Global Layout Mechanics
-   ========================================================================== */
+
 .wrapper:before,
 .wrapper:after {
     content: "";

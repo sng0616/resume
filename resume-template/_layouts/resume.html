@@ -6,11 +6,11 @@
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-      <div class="theme-toggle-container no-print">
+      <!-- <div class="theme-toggle-container no-print">
         <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
           Dark Mode
         </button>
-      </div>
+      </div> -->
       
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
       <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
@@ -236,7 +236,7 @@
       {% endif %}
 
     </div>
-    <script>
+    <!-- <script>
       const toggleBtn = document.getElementById('theme-toggle');
       const docEl = document.documentElement;
 
@@ -267,7 +267,7 @@
         docEl.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
       });
-    </script>
+    </script> -->
     <footer class="page-footer">
       <p class="footer-line">Original template by <a href="http://twitter.com/jglovier">@jglovier</a>. Forked from <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
     </footer>
